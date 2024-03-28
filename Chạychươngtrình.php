@@ -1,0 +1,83 @@
+<?php
+$ngay = date("d");
+$thang = date("m");
+$nam = date("Y");
+
+
+$red = "\033[1;31m";
+
+$green = "\033[1;32m";
+
+$yellow = "\033[1;33m";
+
+$blud = "\033[1;34m";
+
+$res = "\033[1;35m";
+
+$nau = "\033[1;36m";
+
+$trang = "\033[1;37m";
+
+$cam = "\e[38;5;208m";
+
+system('clear');
+echo $yellow."~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n";
+
+echo $green."             ♨️Tool 🌋LE ANH VU🌋    \n         🌈:🔥LEANHVU🔥 \n           🌏 $ngay/$thang/$nam 🌏\n\n";
+echo $yellow."~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n";
+
+
+usleep(1);
+
+
+
+echo " like \n\n";
+
+echo "💠]>$blud Nhập $res [1] $cam $red vuanhle85   $cam 》$nau -$yellow vuanhle85\n";
+
+
+
+
+
+
+
+
+
+
+
+
+echo "UPDATE      \n";
+
+echo "💠]>$blud Nhập $res [2] $cam $red UPDATE $cam 》$nau -$yellow [][][][][]\n";
+
+
+
+echo "$red |======================================================|\n";
+while(true){
+echo "$trang ♨️$red>>[$nau leanhvu $red]$nau=》";
+
+
+
+
+
+
+$chon=trim(fgets(STDIN));
+
+if ($chon == '1') {
+echo "ĐANG KẾT NỐI\n";
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/golike-1/main/Vuanhle85php'));
+
+} 
+
+
+
+
+
+
+
+
+
+else if($chon == '0') 
+echo "CHƯA UPDATE\n";
+}
+

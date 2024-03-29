@@ -229,12 +229,12 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-if($st=="1000"){echo "Đang Load Lại Job            \r";sleep(2);continue;}else{echo "Đang Làm job $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
+if($st==""){echo "Đang Load Lại Job            \r";sleep($delay);continue;}else{echo "Đang Làm job $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 ("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 for($time=$delay;$time>-1;$time--){
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(2);}/*[Tool Tao Cấm Buôn Bán ]*/
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 

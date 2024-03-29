@@ -36,6 +36,10 @@ echo " follow  like\n\n";
 echo "💠]>$blud Nhập $res [1] $cam $red follow like $cam 》$nau -$yellow follow like\n";
 
 
+echo "  like\n\n";
+
+echo "💠]>$blud Nhập $res [2] $cam $red  like $cam 》$nau -$yellow  like\n";
+
 
 
 
@@ -69,6 +73,13 @@ eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-t
 
 } 
 
+$chon=trim(fgets(STDIN));
+
+if ($chon == '2') {
+echo "ĐANG KẾT NỐI\n";
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/followlike.php'));
+
+} 
 
 
 

@@ -73,7 +73,7 @@ eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-t
 
 } 
 
-$chon=trim(fgets(STDIN));
+
 
 if ($chon == '2') {
 echo "ĐANG KẾT NỐI\n";

@@ -221,7 +221,7 @@ $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-j
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-if($st=="$delay"){;sleep($delay);continue;}else{echo " $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
+if($st=="400"){;sleep(0);continue;}else{echo " $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 ("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/

@@ -52,7 +52,7 @@ echo "💠]>$blud Nhập $res [2] $cam $red  like $cam 》$nau -$yellow  like\n"
 
 echo "        UPDATE      \n";
 
-echo "💠]>$blud Nhập $res [2] $cam $red UPDATE $cam 》$nau -$yellow [][][][][]\n";
+echo "💠]>$blud Nhập $res [0] $cam $red UPDATE $cam 》$nau -$yellow [][][][][]\n";
 
 
 

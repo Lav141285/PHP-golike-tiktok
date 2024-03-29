@@ -225,8 +225,8 @@ if($st=="$delay"){;sleep($delay);continue;}else{echo " $ty | $uid          \r";}
 /*[Tools Nguyễn Văn Phúc ]*/
 ("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-for($time=$delay;$time>$delay;$time--){
-;sleep($delay);}/*[Tool Tao Cấm Buôn Bán ]*/
+for($time=$delay;$time>0;$time--){
+;sleep(0);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 

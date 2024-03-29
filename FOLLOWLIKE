@@ -33,7 +33,7 @@ usleep(1);
 
 echo " follow  like\n\n";
 
-echo "💠]>$blud Nhập $res [1] $cam $red vuanhle85   $cam 》$nau -$yellow vuanhle85\n";
+echo "💠]>$blud Nhập $res [1] $cam $red follow like $cam 》$nau -$yellow follow like\n";
 
 
 
@@ -65,7 +65,7 @@ $chon=trim(fgets(STDIN));
 
 if ($chon == '1') {
 echo "ĐANG KẾT NỐI\n";
-eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/golike-1/main/Vuanhle85php'));
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/followlike.php'));
 
 } 
 

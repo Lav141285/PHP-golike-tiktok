@@ -46,6 +46,7 @@ echo "💠]>$blud Nhập $res [10] $cam $red dothihong1992like.php   $cam 》$na
 echo "💠]>$blud Nhập $res [11] $cam $red hothithuy57like.php   $cam 》$nau -$yellow hothithuy57like.php\n";
 echo "💠]>$blud Nhập $res [12] $cam $red leanhvu1985like.php   $cam 》$nau -$yellow leanhvu1985like.php\n";
 echo "💠]>$blud Nhập $res [13] $cam $red vuanhle85_like.php   $cam 》$nau -$yellow vuanhle85_like.php\n";
+echo "💠]>$blud Nhập $res [14] $cam $red instagramlav.php   $cam 》$nau -$yellow instagramlav.php\n";
 
 
 
@@ -138,6 +139,11 @@ eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-t
 if ($chon == '13') {
 echo "ĐANG KẾT NỐI\n";
 eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/vuanhle85_like.php'));
+
+} 
+if ($chon == '14') {
+echo "ĐANG KẾT NỐI\n";
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/instagramlav.php'));
 
 } 
 

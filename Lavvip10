@@ -234,7 +234,7 @@ if($st=="4000"){echo "Đang Load Lại Job            \r";sleep(1);continue;}els
 ("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 for ($time = 0; $time > -1; $time--) {
-    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(3);
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(1);
 }
 
 

@@ -130,10 +130,10 @@ $delay = trim(fgets(STDIN));
 
 $html="htmlspecialchars_decode";
 ////////////////golike//////////////////////////
-$a1="Host:sv5.golike.net";
+$a1="Host:gateway.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE3MDQ3MzQsImV4cCI6MTc0MzI0MDczNCwibmJmIjoxNzExNzA0NzM0LCJqdGkiOiJwdm96YkpMcmt6VDR2NVNJIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.e1oTxSO6G1BUfOItdIrc6KYllZFUFAZWzdHoKkBwIAc     ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3="authorization: Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE3MDQ3MzQsImV4cCI6MTc0MzI0MDczNCwibmJmIjoxNzExNzA0NzM0LCJqdGkiOiJwdm96YkpMcmt6VDR2NVNJIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.e1oTxSO6G1BUfOItdIrc6KYllZFUFAZWzdHoKkBwIAc     ";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a4="origin: https://app.golike.net";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -142,7 +142,7 @@ $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
 /*[Tools Nguyễn Văn Phúc ]*/
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$b1 ="Host: sv4.golike.net";
+$b1 ="Host: gateway.golike.net";
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm = array($a1,$a2,$a3,$a4,$a5);
@@ -152,22 +152,8 @@ $tsm1 = array($b1,$a2,$a3,$a4,$a5);
 /*[Tools Nguyễn Văn Phúc ]*/
 
 
-/*[Tools Nguyễn Văn Phúc ]*/
-
-
 $go = get("https://sv5.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$go = get("https://sv4.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$go = get("https://sv3.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$go = get("https://sv2.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$go = get("https://dev.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$go = get("https://gateway.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-
 $go = json_decode($go,true);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
@@ -247,9 +233,8 @@ if($st=="0"){echo "Đang Load Lại Job            \r";sleep(0);continue;}else{e
 /*[Tools Nguyễn Văn Phúc ]*/
 ("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-for ($time = 0; $time > 0; $time--) {
-    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
-}
+for($time=$delay;$time>-1;$time--){
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 
@@ -291,19 +276,6 @@ $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
 $loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-
-$loi = post("https://sv5.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = post("https://sv2.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = post("https://sv3.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = post("https://gatew.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-
-$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
-
-$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
-$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
-$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
-$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
 $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 cc($p);

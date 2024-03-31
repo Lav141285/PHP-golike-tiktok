@@ -1,4 +1,4 @@
-
+i
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -231,12 +231,10 @@ continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
 if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
-@system("termux-open-url $link");
+system("termux-open $link");
 
-
-for($time=10;$time>-1;$time--){
+for($time=6;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
-
 
 
 

@@ -233,7 +233,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else
 
 system("termux-open $link");
 
-for($time=6;$time>-1;$time--){
+for($time=7;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
 
 

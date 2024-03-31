@@ -281,7 +281,7 @@ $ngay=date("H:i");$noe++;
 
 $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);
 for($time= 15;$time> 0;$time--){
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}}else{
+echo $yellow."lam job $time khong thanh cong...... \r";sleep(0);}}else{
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 
 $tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");

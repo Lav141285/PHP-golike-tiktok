@@ -233,7 +233,7 @@ if ($st == "210") {
 
 system("termux-open $link");
 
-for ($time = 60; $time > 0; $time--) {
+for ($time = 15; $time > 0; $time--) {
     echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
 }
 

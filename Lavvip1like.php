@@ -231,7 +231,7 @@ if ($st == "210") {
     echo "Đang Làm job $ty | $uid          \r";
 }
 
-("termux-open $link");
+
 
 for ($time = 15; $time > 0; $time--) {
     echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);

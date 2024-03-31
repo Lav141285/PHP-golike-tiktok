@@ -152,6 +152,8 @@ $go = get("https://gateway.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấ
 /*[Tools Nguyễn Văn Phúc ]*/
 $go = get("https://sv4.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
+$go = get("https://sv5.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 $go = json_decode($go,true);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 

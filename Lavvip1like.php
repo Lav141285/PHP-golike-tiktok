@@ -286,6 +286,25 @@ $loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs"
 
 
 
+/*[Tools Nguyễn Văn Phúc ]*/cc($p);
+continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
+
+if ($st == "210") {
+    echo "Đang Load Lại Job            \r"; sleep(0); continue;
+} else {
+    echo "Đang Làm job $ty | $uid          \r";
+}
+
+
+
+for ($time = 15; $time > 0; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
+}
+
+
+
+
+
 
 
 

@@ -269,25 +269,41 @@ $se = $nhan['success'];
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
-if($se == "1"){/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+if($se == "1"){
+
 date_default_timezone_set('Asia/Ho_Chi_Minh');
-$ngay=date("H:i");$noe++;/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);}else{
-$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-cc($p);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+$ngay=date("H:i");$noe++;
+
+$uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);
+for($time=$ 15;$time> 0;$time--){
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}}else{
+$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
+
+$tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
+$loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$loi = json_decode($loi,true);
+$mes = $loi['message'];
+if($mes == "Bỏ qua thành công !"){
+$p = $red."Báo Cáo lỗi Thành công           \r";
+cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé \n => telegram : @nvp2912\n";}
+
+
 }
 
 
 }
+
+
+
+
+/*Lời Cảm Ơn Mọi Người Tôn Trọng và Ủng Hộ Ib Qua Zalo*/
+
+
+
+
+
+
+
 
 
 

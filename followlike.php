@@ -254,21 +254,6 @@ $tsm2 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type
 /*[Tools Nguyễn Văn Phúc ]*/
 
 $nhan = post("https://sv4.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$nhan = json_decode($nhan,true);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$se = $nhan['success'];
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-
 $nhan = post("https://sv4.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/

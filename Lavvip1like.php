@@ -129,7 +129,7 @@ return 1;}
 $a1="Host:gateway.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE4MDMwNTksImV4cCI6MTc0MzMzOTA1OSwibmJmIjoxNzExODAzMDU5LCJqdGkiOiJaS3VycFExdFFFOUdlMVI3Iiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.ob-jNJLbVLZSvoOb5QCBhtHbAk2lo-pKnGoBSesVU9A      ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE4NDcxNDgsImV4cCI6MTc0MzM4MzE0OCwibmJmIjoxNzExODQ3MTQ4LCJqdGkiOiJCZXhDT0xIRmh1MXNHSUVUIiwic3ViIjoyNjE4MTUyLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.nJ-bogyLNlRyrow2SzrzrV-GrKB10QA63GZQJi-f8YQ  ";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a4="origin: https://app.golike.net";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -225,11 +225,17 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
-if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+if ($st == "210") {
+    echo "Đang Load Lại Job            \r"; sleep(0); continue;
+} else {
+    echo "Đang Làm job $ty | $uid          \r";
+}
 
+system("termux-open $link");
 
-
+for ($time = 15; $time > 0; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
+}
 
 
 

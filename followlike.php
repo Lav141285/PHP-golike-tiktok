@@ -224,10 +224,15 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
-if($st=="400"){echo "Đang Load Lại Job            \r";sleep(7000);continue;}else{echo "Đang Làm job $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
 
-system("termux-open $link");/*[Tool Tao Cấm
+
+
+if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+
+system("termux-open $link");
+
+for($time=6;$time>-1;$time--){
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
 
 
 

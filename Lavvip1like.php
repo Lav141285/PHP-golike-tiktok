@@ -290,7 +290,7 @@ $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Bỏ qua thành công !"){
 $p = $red."Báo Cáo lỗi Thành công           \r";
-
+cc($p);} 
 
 
 }

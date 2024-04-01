@@ -229,7 +229,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else
 
 system("termux-open-url $link");
 
-for($time=15;$time>-1;$time--){
+for($time=30;$time>0;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
 
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';

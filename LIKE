@@ -60,7 +60,7 @@ echo "💠]>$blud Nhập $res [15] $cam $red   $cam 》$nau -$yellow Lavvip10\n"
 
 
 
-echo "UPDATE      \n";
+echo "             UPDATE      \n";
 
 echo "💠]>$blud Nhập $res [0] $cam $red UPDATE $cam 》$nau -$yellow [][][][][]\n";
 
@@ -145,6 +145,11 @@ eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-t
 if ($chon == '14') {
 echo "ĐANG KẾT NỐI\n";
 eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/instagramlav.php'));
+
+} 
+if ($chon == '15') {
+echo "ĐANG KẾT NỐI\n";
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/Lavvip10'));
 
 } 
 

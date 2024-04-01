@@ -125,36 +125,8 @@ return 1;}
 
 
 
-echo "Nhập Time delay: ";
-$delay = trim(fgets(STDIN));
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$lop = $res."============".$nau."===========".$yellow."===========".$green."==============\n";
-system('clear');/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-///// Tools Nguyễn Văn Phúc /////
-$phucc=$nau."Cre: Ng Van Phuc && Edit by Bi Dev \n";
-cc($phucc);
-echo $green."
 
 
-    ╔═╗┌─┐┬  ┬┬┌─┌─┐
-    ║ ╦│ ││  │├┴┐├┤ ò
-    ╚═╝└─┘┴─┘┴┴ ┴└─┘
-    \n";cc($lop);
-
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-////////////////////////////////////////////////////////////////
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$html="htmlspecialchars_decode";
-////////////////golike//////////////////////////
 $a1="Host:sv4.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/

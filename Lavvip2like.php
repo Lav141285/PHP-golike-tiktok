@@ -232,8 +232,8 @@ if ($st == "210") {
 }
 
 
-
-for ($time = 15; $time > 0; $time--) {
+t
+for ($time = 60; $time > 0; $time--) {
     echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
 }
 

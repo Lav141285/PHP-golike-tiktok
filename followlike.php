@@ -221,7 +221,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(0);continue;}else
 /*[Tools Nguyễn Văn Phúc ]*/
 system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-for($time=15;$time>0;$time--){
+for($time= 15;$time> 0;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
@@ -260,7 +260,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;
 
 $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);
-for($time= 15;$time>0;$time--){
+for($time= 15;$time> 0;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}}else{
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 

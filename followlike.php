@@ -229,7 +229,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(5);continue;}else
 /*[Tools Nguyễn Văn Phúc ]*/
 system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-for($time=5;$time>-1;$time--){
+for($time=2;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 

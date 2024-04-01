@@ -290,7 +290,7 @@ $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Bỏ qua thành công !"){
 $p = $red."Báo Cáo lỗi Thành công           \r";
-cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé \n => telegram : @nvp2912\n";}
+cc($p);}else{echo $yellow."\n";}
 
 
 }

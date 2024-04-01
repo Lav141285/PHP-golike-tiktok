@@ -33,20 +33,20 @@ usleep(1);
 
 echo " like \n\n";
 
-echo "💠]>$blud Nhập $res [1] $cam $red Lavvip1like.php   $cam 》$nau -$yellow Lavvip1like.php\n";
-echo "💠]>$blud Nhập $res [2] $cam $red Lavvip2like.php   $cam 》$nau -$yellow Lavvip2like.php\n";
-echo "💠]>$blud Nhập $res [3] $cam $red Lavvip3like.php   $cam 》$nau -$yellow Lavvip3like.php\n";
-echo "💠]>$blud Nhập $res [4] $cam $red Lavvip4like.php   $cam 》$nau -$yellow Lavvip4like.php\n";
-echo "💠]>$blud Nhập $res [5] $cam $red Lavvip5like.php   $cam 》$nau -$yellow Lavvip5like.php\n";
-echo "💠]>$blud Nhập $res [6] $cam $red Lavvip6like.php   $cam 》$nau -$yellow Lavvip6like.php\n";
-echo "💠]>$blud Nhập $res [7] $cam $red Lavvip7like.php   $cam 》$nau -$yellow Lavvip7like.php\n";
+echo "💠]>$blud Nhập $res [1] $cam $red   $cam 》$nau -$yellow Lavvip1like.php\n";
+echo "💠]>$blud Nhập $res [2] $cam $red   $cam 》$nau -$yellow Lavvip2like.php\n";
+echo "💠]>$blud Nhập $res [3] $cam $red   $cam 》$nau -$yellow Lavvip3like.php\n";
+echo "💠]>$blud Nhập $res [4] $cam $red   $cam 》$nau -$yellow Lavvip4like.php\n";
+echo "💠]>$blud Nhập $res [5] $cam $red  $cam 》$nau -$yellow Lavvip5like.php\n";
+echo "💠]>$blud Nhập $res [6] $cam $red  $cam 》$nau -$yellow Lavvip6like.php\n";
+echo "💠]>$blud Nhập $res [7] $cam $red   $cam 》$nau -$yellow Lavvip7like.php\n";
 echo "💠]>$blud Nhập $res [8] $cam $red Lavvip8like.php   $cam 》$nau -$yellow Lavvip8like.php\n";
-echo "💠]>$blud Nhập $res [9] $cam $red Lavvip9like.php   $cam 》$nau -$yellow Lavvip9like.php\n";
+echo "💠]>$blud Nhập $res [9] $cam $red   $cam 》$nau -$yellow Lavvip9like.php\n";
 echo "💠]>$blud Nhập $res [10] $cam $red dothihong1992like.php   $cam 》$nau -$yellow dothihong1992like.php\n";
-echo "💠]>$blud Nhập $res [11] $cam $red hothithuy57like.php   $cam 》$nau -$yellow hothithuy57like.php\n";
-echo "💠]>$blud Nhập $res [12] $cam $red leanhvu1985like.php   $cam 》$nau -$yellow leanhvu1985like.php\n";
-echo "💠]>$blud Nhập $res [13] $cam $red vuanhle85_like.php   $cam 》$nau -$yellow vuanhle85_like.php\n";
-echo "💠]>$blud Nhập $res [14] $cam $red instagramlav.php   $cam 》$nau -$yellow instagramlav.php\n";
+echo "💠]>$blud Nhập $res [11] $cam $red    $cam 》$nau -$yellow hothithuy57like.php\n";
+echo "💠]>$blud Nhập $res [12] $cam $red   $cam 》$nau -$yellow leanhvu1985like.php\n";
+echo "💠]>$blud Nhập $res [13] $cam $red   $cam 》$nau -$yellow vuanhle85_like.php\n";
+echo "💠]>$blud Nhập $res [14] $cam $red    $cam 》$nau -$yellow instagramlav.php\n";
 echo "💠]>$blud Nhập $res [15] $cam $red   $cam 》$nau -$yellow Lavvip10\n";
 
 

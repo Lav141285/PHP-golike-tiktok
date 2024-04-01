@@ -229,7 +229,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else
 
 system("termux-open-url $link");
 
-for($time=15;$time>0;$time--){
+for($time=15;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
 
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
@@ -263,7 +263,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;
 
 $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);
-for($time= 15;$time> 0;$time--){
+for($time= 15;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}}else{
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 

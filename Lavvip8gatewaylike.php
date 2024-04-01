@@ -233,7 +233,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(5);continue;}else
 
 
 
-for($time=1;$time>-1;$time--){
+for($time=0;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
@@ -272,7 +272,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;
 
 $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);
-for($time= 1;$time>-1;$time--){
+for($time= 0;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}}else{
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 

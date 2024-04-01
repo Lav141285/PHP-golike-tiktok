@@ -1,4 +1,28 @@
 
+$ngay = date("d");
+$thang = date("m");
+$nam = date("Y");
+ 
+ 
+$red = "\033[1;31m";
+ 
+$green = "\033[1;32m";
+ 
+$yellow = "\033[1;33m";
+ 
+$blud = "\033[1;34m";
+ 
+$res = "\033[1;35m";
+ 
+$nau = "\033[1;36m";
+ 
+$trang = "\033[1;37m";
+ 
+$cam = "\e[38;5;208m";
+ 
+$loijob = [];
+ 
+$loitk = [];
 $red="\033[1;31m";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $green="\033[1;32m";/*[Tool Tao Cấm Buôn Bán ]*/
@@ -93,17 +117,28 @@ function POST($host,$tsm,$data){
 
  function cc($vanban){$str = strlen($vanban);
  for($i=0;$i<=$str;$i++){echo $vanban[$i]; usleep(1000);}
-return 1;}/*[Tool Tao Cấm Buôn Bán ]*/
+return 1;}
 
-$a1="Host: sv5.golike.net";
+
+
+
+
+
+
+
+$a1="Host:gateway.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4     ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4      ";/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 $a4="origin: https://app.golike.net";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
  
-$b1 ="Host: sv4.golike.net";
+/*[Tools Nguyễn Văn Phúc ]*/
+/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$b1 ="Host: gateway.golike.net";
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm = array($a1,$a2,$a3,$a4,$a5);
@@ -170,12 +205,16 @@ $st = $golike['status'];/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $ty = $golike['data']['package_name'];
 $coin = $golike['data']['price_per_after_cost'];
+
+
+$linknow = explode(' ', explode('com/', $link)[1])[0];
+    $now = "https://now.tiktok.com/$linknow";
  /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $loi_id = $golike['data']['object_id'];/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 if($ty =="comment" or $ty == "follow"){
-echo "Job $ty đã chặn vì chỉ follow         \r";$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';/*[Tool Tao Cấm Buôn Bán ]*/
+echo "Job $ty chặn  follow    \r";$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -185,8 +224,26 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
 
+if ($st == "210") {
+    echo "Đang Load Lại Job            \r"; sleep(0); continue;
+} else {
+    echo "Đang Làm job $ty | $uid          \r";
+}
+
+
+
+for ($time = 15; $time > 0; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
+}
+
+
+
+
+
+
+
+/*[Tools Nguyễn Văn Phúc ]*/
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm2 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);

@@ -290,18 +290,13 @@ $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Bỏ qua thành công !"){
 $p = $red."Báo Cáo lỗi Thành công           \r";
-cc($p);} 
-
-
+cc($p);
+/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 }
 
 
 }
-
-
-
-
-/*Lời Cảm Ơn Mọi Người Tôn Trọng và Ủng Hộ Ib Qua Zalo*/
 
 
 

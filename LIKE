@@ -161,9 +161,6 @@ eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-t
 
 
 
-
-
-
 else if($chon == '0') 
 echo "CHƯA UPDATE\n";
 }

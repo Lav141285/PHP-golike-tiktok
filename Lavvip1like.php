@@ -1,119 +1,95 @@
+<?php
+$red="\033[1;31m";
 
-$ngay = date("d");
-$thang = date("m");
-$nam = date("Y");
- 
- 
-$red = "\033[1;31m";
- 
-$green = "\033[1;32m";
- 
-$yellow = "\033[1;33m";
- 
-$blud = "\033[1;34m";
- 
-$res = "\033[1;35m";
- 
-$nau = "\033[1;36m";
- 
-$trang = "\033[1;37m";
- 
-$cam = "\e[38;5;208m";
- 
-$loijob = [];
- 
-$loitk = [];
-$red="\033[1;31m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$green="\033[1;32m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$yellow="\033[1;33m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$blud="\033[1;34m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$res="\033[1;35m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$nau="\033[1;36m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$trang="\033[1;37m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$cam= "\e[38;5;208m";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$loijob=[];/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$loitk=[];/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+$green="\033[1;32m";
+
+$yellow="\033[1;33m";
+
+$blud="\033[1;34m";
+
+$res="\033[1;35m";
+
+$nau="\033[1;36m";
+
+$trang="\033[1;37m";
+
+$cam= "\e[38;5;208m";
+
+$loijob=[];
+
+$loitk=[];
+
 error_reporting(0);
 system('clear');
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
+
 
 function GET($host,$tsm){
-  $mr = curl_init();/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  $mr = curl_init();
+
   curl_setopt_array($mr, array(
-  CURLOPT_PORT => "443",/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_URL => "$host",/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  CURLOPT_PORT => "443",
+
+  CURLOPT_URL => "$host",
+
   CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_SSL_VERIFYPEER => false,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_CUSTOMREQUEST => "GET",/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_HTTPHEADER => $tsm,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*//*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_FOLLOWLOCATION => true,));/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  CURLOPT_SSL_VERIFYPEER => false,
+
+  CURLOPT_CUSTOMREQUEST => "GET",
+
+  CURLOPT_HTTPHEADER => $tsm,
+
+
+  CURLOPT_FOLLOWLOCATION => true,));
+
   $mr2 = curl_exec($mr); curl_close($mr);
-  return $mr2;}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  return $mr2;}
+
   
   function HEAD($host,$tsm,$data){
-  $mr = curl_init();/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  curl_setopt_array($mr, array(/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_PORT => "443",
-  CURLOPT_URL => "$host",/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_SSL_VERIFYPEER => false,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_CUSTOMREQUEST => "HEAD",
-  CURLOPT_POSTFIELDS => $data,
-  CURLOPT_HTTPHEADER => $tsm,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_HEADER => true));
-  $mr2 = curl_exec($mr); curl_close($mr);
- return $mr2;}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  $mr = curl_init();
 
-function POST($host,$tsm,$data){
-  $mr = curl_init();/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  curl_setopt_array($mr, array(/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  curl_setopt_array($mr, array(
+
   CURLOPT_PORT => "443",
   CURLOPT_URL => "$host",
-  CURLOPT_RETURNTRANSFER => true,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*//*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_SSL_VERIFYPEER => false,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-  CURLOPT_CUSTOMREQUEST => "POST",/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_SSL_VERIFYPEER => false,
+
+  CURLOPT_CUSTOMREQUEST => "HEAD",
   CURLOPT_POSTFIELDS => $data,
-  CURLOPT_HTTPHEADER => $tsm,/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  CURLOPT_HTTPHEADER => $tsm,
+
+  CURLOPT_HEADER => true));
+  $mr2 = curl_exec($mr); curl_close($mr);
+ return $mr2;}
+
+
+function POST($host,$tsm,$data){
+  $mr = curl_init();
+
+  curl_setopt_array($mr, array(
+
+  CURLOPT_PORT => "443",
+  CURLOPT_URL => "$host",
+  CURLOPT_RETURNTRANSFER => true,
+
+
+  CURLOPT_SSL_VERIFYPEER => false,
+
+  CURLOPT_CUSTOMREQUEST => "POST",
+
+  CURLOPT_POSTFIELDS => $data,
+  CURLOPT_HTTPHEADER => $tsm,
+
   //CURLOPT_HEADER => true
 ));
-  $mr2 = curl_exec($mr); curl_close($mr);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+  $mr2 = curl_exec($mr); curl_close($mr);
+
  return $mr2;}
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
+
 
  function cc($vanban){$str = strlen($vanban);
  for($i=0;$i<=$str;$i++){echo $vanban[$i]; usleep(1000);}
@@ -126,39 +102,48 @@ return 1;}
 
 
 
-$a1="Host:gateway.golike.net";
-$a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4       ";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$a4="origin: https://app.golike.net";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
- 
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$b1 ="Host: gateway.golike.net";
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
+
+
+
+
+
+
+system('clear');
+
+
+$a1="Host: gateway.golike.net";
+$a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
+
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4       ";
+
+$a4="origin: https://app.golike.net";
+
+$a5 ="t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
+
+
+
+
+
+
 $tsm = array($a1,$a2,$a3,$a4,$a5);
-$tsm1 = array($b1,$a2,$a3,$a4,$a5);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*//*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+$tsm1 = array($a1,$a2,$a3,$a4,$a5);
 
 
-$go = get("https://sv5.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$go = json_decode($go,true);/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
 
-$ff =0;/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-while(true){/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-	/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
+
+$go = get("https://gateway.golike.net/api/tiktok-account",$tsm);
+
+$go = json_decode($go,true);
+
+
+$ff =0;
+
+while(true){
+
+	
+
 	
 $id = $go['data'][$ff]['id'];
 $ten = $go['data'][$ff]['nickname'];
@@ -166,31 +151,25 @@ if($ten == true){
 echo $yellow." [$ff] => NAME : $ten | ID : $id      \n";
 $ff++;continue;}else{break;}
 }
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*//*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-echo "Nhập Tài Khoản Chạy : ";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$co = trim(fgets(STDIN));/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$id = $go['data'][$co]['id'];/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-$ten = $go['data'][$co]['nickname'];/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
 
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-system('clear');
-///// Tools Nguyễn Văn Phúc /////
-$phucc=$nau."CHỦ TOOL : Nguyễn Văn Phúc && Edit by Bi Dev \n";
-cc($phucc);
-echo $green."Tool Golike TikTok Vip    \n";cc($lop);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
+
+echo "\nNhập Tài Khoản Chạy : ";
+
+$co = trim(fgets(STDIN));
+
+
+
+$id = $go['data'][$co]['id'];
+
+$ten = $go['data'][$co]['nickname'];
+
+
+
+
+
+
+
 
 while(true){
 

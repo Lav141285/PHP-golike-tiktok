@@ -186,13 +186,7 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-for($time=$delay;$time>-1;$time--){
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm2 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);

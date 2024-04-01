@@ -211,7 +211,7 @@ $now = "https://now.tiktok.com/$linknow";
 
 $loi_id = $golike['data']['object_id'];
 
-if($ty =="comment" or $ty == ""){
+if($ty =="comment" or $ty == "follow"){
 echo "Job $ty đã chặn vì chỉ follow         \r";
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 
@@ -227,7 +227,7 @@ continue;}else{}
 
 if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
-system("termux-open-url $link");
+("termux-open-url $link");
 
 for($time=15;$time>0;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}

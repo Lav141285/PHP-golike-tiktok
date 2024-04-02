@@ -218,21 +218,6 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
-if ($st == "210") {
-    echo "Đang Load Lại Job            \r"; sleep(0); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-
-
-
-for ($time = 999999999; $time > 0; $time--) {
-    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
-}
-
-
-
-
 
 
 /*[Tools Nguyễn Văn Phúc ]*/

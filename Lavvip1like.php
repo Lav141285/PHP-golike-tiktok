@@ -261,6 +261,22 @@ $se = $nhan['success'];
 /*[Tools Nguyễn Văn Phúc ]*/
 
 if($se == "1"){/*[Tool Tao Cấm Buôn Bán ]*/
+
+
+
+
+echo "Đang Load Lại Job            \r"; sleep(0); continue;
+} else {
+    echo "Đang Làm job $ty | $uid          \r";
+}
+
+
+
+for ($time = 9999; $time > 0; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
+}
+
+
 /*[Tools Nguyễn Văn Phúc ]*/
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;/*[Tool Tao Cấm Buôn Bán ]*/

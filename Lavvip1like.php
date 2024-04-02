@@ -254,7 +254,7 @@ $se = $nhan['success'];
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
-if($se == "1"){/*[Tool Tao Cấm Buôn Bán ]*/
+if($se == "10"){/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;/*[Tool Tao Cấm Buôn Bán ]*/

@@ -221,7 +221,7 @@ if($st=="400"){echo "Đang Load Lại Job            \r";sleep(0);continue;}else
 /*[Tools Nguyễn Văn Phúc ]*/
 ("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-for($time=$delay;$time>0;$time--){
+for($time=$delay;$time>-1;$time--){
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
@@ -254,7 +254,7 @@ $se = $nhan['success'];
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
-if($se == "400"){/*[Tool Tao Cấm Buôn Bán ]*/
+if($se == "1"){/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;/*[Tool Tao Cấm Buôn Bán ]*/

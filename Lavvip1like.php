@@ -260,12 +260,8 @@ $se = $nhan['success'];
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
-if($se == "1"){/*[Tool Tao Cấm Buôn Bán ]*/
-
-
-
-
-echo "Đang Load Lại Job            \r"; sleep(0); continue;
+if ($st == "210") {
+    echo "Đang Load Lại Job            \r"; sleep(0); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }

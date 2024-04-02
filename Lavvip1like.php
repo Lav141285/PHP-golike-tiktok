@@ -126,11 +126,10 @@ return 1;}
 
 
 
-
-$a1="Host:sv2.golike.net";
+$a1="Host:sv3.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4     ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4    ";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a4="origin: https://app.golike.net";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -139,7 +138,7 @@ $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
 /*[Tools Nguyễn Văn Phúc ]*/
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$b1 ="Host: sv2.golike.net";
+$b1 ="Host: sv3.golike.net";
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm = array($a1,$a2,$a3,$a4,$a5);
@@ -149,7 +148,7 @@ $tsm1 = array($b1,$a2,$a3,$a4,$a5);
 /*[Tools Nguyễn Văn Phúc ]*/
 
 
-$go = get("https://sv2.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+$go = get("https://sv3.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $go = json_decode($go,true);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -183,10 +182,19 @@ $ten = $go['data'][$co]['nickname'];/*[Tool Tao Cấm Buôn Bán ]*/
 
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
+system('clear');
+///// Tools Nguyễn Văn Phúc /////
+$phucc=$nau."CHỦ TOOL : Nguyễn Văn Phúc && Edit by Bi Dev \n";
+cc($phucc);
+echo $green."Tool Golike TikTok Vip    \n";cc($lop);
+/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 
 while(true){
 
-$golike = get("https://sv2.golike.net/api/advertising/publishers/tiktok/jobs?account_id=".$id."&data=null",$tsm1);/*[Tool Tao Cấm Buôn Bán ]*/
+$golike = get("https://sv3.golike.net/api/advertising/publishers/tiktok/jobs?account_id=".$id."&data=null",$tsm1);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $golike = json_decode($golike,true);
 $link = $golike['data']['link'];/*[Tool Tao Cấm Buôn Bán ]*/
@@ -210,7 +218,7 @@ echo "Job $ty đã chặn vì chỉ follow         \r";$data = '{"ads_id":'.$uid
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$loi = post("https://sv2.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$loi = post("https://sv3.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
 $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 /*[Tool Tao Cấm Buôn Bán ]*/
@@ -238,7 +246,7 @@ $tsm2 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
-$nhan = post("https://sv2.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
+$nhan = post("https://sv3.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 /*[Tool Tao Cấm Buôn Bán ]*/
@@ -263,7 +271,7 @@ $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$ui
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://sv2.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$loi = post("https://sv3.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
 $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 cc($p);

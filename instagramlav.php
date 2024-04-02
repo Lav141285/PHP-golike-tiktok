@@ -182,15 +182,6 @@ $ten = $go['data'][$co]['nickname'];/*[Tool Tao Cấm Buôn Bán ]*/
 
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-system('clear');
-///// Tools Nguyễn Văn Phúc /////
-$phucc=$nau."CHỦ TOOL : Nguyễn Văn Phúc && Edit by Bi Dev \n";
-cc($phucc);
-echo $green."Tool Golike TikTok Vip    \n";cc($lop);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
 
 while(true){
 

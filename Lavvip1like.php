@@ -226,7 +226,7 @@ if ($st == "210") {
 
 
 
-for ($time = 99999; $time > 0; $time--) {
+for ($time = 999999; $time > 0; $time--) {
     echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
 }
 

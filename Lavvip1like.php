@@ -256,6 +256,16 @@ $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
 $loi = post("https://sv2.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+
+
+
+
+
+
+
+
+
+
 $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 cc($p);

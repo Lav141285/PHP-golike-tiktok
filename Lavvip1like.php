@@ -151,6 +151,16 @@ $tsm1 = array($b1,$a2,$a3,$a4,$a5);
 
 $go = get("https://sv5.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
+$go = get("https://sv4.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$go = get("https://sv3.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$go = get("https://sv2.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$go = get("https://dev.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$go = get("https://gateway.golike.net/api/tiktok-account",$tsm);/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 $go = json_decode($go,true);/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 

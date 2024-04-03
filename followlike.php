@@ -230,7 +230,7 @@ continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 if ($st == "210") {
-    echo "Đang Load Lại Job            \r"; sleep(3); continue;
+    echo "Đang Load Lại Job            \r"; sleep(5); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }

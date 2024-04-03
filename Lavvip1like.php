@@ -3,7 +3,6 @@ $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
  
-
 $red = "\033[1;31m";
  
 $green = "\033[1;32m";

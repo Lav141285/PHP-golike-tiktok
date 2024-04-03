@@ -1,5 +1,4 @@
 
-
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -231,7 +230,7 @@ continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 if ($st == "210") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
+    echo "Đang Load Lại Job            \r"; sleep(3); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }
@@ -246,8 +245,8 @@ system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 
-for ($time = 45; $time > -1; $time--) {
-    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(1);
+for ($time = 5; $time > -3; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(3);
 }
 
 

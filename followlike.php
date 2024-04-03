@@ -230,7 +230,7 @@ continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 if ($st == "210") {
-    echo "Đang Load Lại Job            \r"; sleep(2); continue;
+    echo "Đang Load Lại Job            \r"; sleep(3); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }
@@ -245,8 +245,8 @@ system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 
-for ($time = 10; $time > -2; $time--) {
-    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(2);
+for ($time = 7; $time > -3; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(3);
 }
 
 

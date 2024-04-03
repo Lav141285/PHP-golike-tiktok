@@ -200,7 +200,7 @@ $ten = $go['data'][$co]['nickname'];/*[Tool Tao Cấm Buôn Bán ]*/
 while(true){
 
 $golike = get("https://sv4.golike.net/api/advertising/publishers/tiktok/jobs?account_id=".$id."&data=null",$tsm1);
-$golike = get("https://sv5.golike.net/api/advertising/publishers/tiktok/jobs?account_id=".$id."&data=null",$tsm1);
+
 
 $golike = json_decode($golike,true);
 $link = $golike['data']['link'];/*[Tool Tao Cấm Buôn Bán ]*/
@@ -262,7 +262,7 @@ $tsm2 = array($b1,$b2,$b3,$b4,$b5,$b6,$a2,$a3,$a4,"content-length: ".strlen($dat
 /*[Tools Nguyễn Văn Phúc ]*/
 
 $nhan = post("https://sv4.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
-$nhan = post("https://sv5.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
+
 
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/

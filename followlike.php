@@ -241,8 +241,8 @@ system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 
-for ($time = 15; $time > -1; $time--) {
-    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(1);
+for ($time = 99999; $time > 0; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
 }
 
 

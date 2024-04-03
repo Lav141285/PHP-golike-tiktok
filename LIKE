@@ -50,6 +50,7 @@ echo "💠]>$blud Nhập $res [14] $cam $red    $cam 》$nau -$yellow instagraml
 echo "💠]>$blud Nhập $res [15] $cam $red   $cam 》$nau -$yellow Lavvip10\n";
 echo "💠]>$blud Nhập $res [16] $cam $red   $cam 》$nau -$yellow Lavvip12\n";
 echo "💠]>$blud Nhập $res [17] $cam $red   $cam 》$nau -$yellow Lavvip13\n";
+echo "💠]>$blud Nhập $res [17] $cam $red   $cam 》$nau -$yellow Lavvip14\n";
 
 
 
@@ -166,6 +167,9 @@ eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-t
 
 } 
 
+if ($chon == '17') {
+echo "ĐANG KẾT NỐI\n";
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/Lavvip14'));
 
 
 

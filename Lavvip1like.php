@@ -127,11 +127,11 @@ return 1;}
 
 
 $a1="Host:gateway.golike.net";
-$a1="Host:dev.golike.net";
-$a1="Host:sv5.golike.net";
-$a1="Host:sv4.golike.net";
-$a1="Host:sv3.golike.net";
-$a1="Host:sv2.golike.net";
+$a6="Host:dev.golike.net";
+$a7="Host:sv5.golike.net";
+$a8="Host:sv4.golike.net";
+$a9="Host:sv3.golike.net";
+$a10="Host:sv2.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4      ";/*[Tool Tao Cấm Buôn Bán ]*/
@@ -144,15 +144,15 @@ $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $b1 ="Host: gateway.golike.net";
-$b1 ="Host: dev.golike.net";
-$b1 ="Host: sv2.golike.net";
-$b1 ="Host: sv3.golike.net";
-$b1 ="Host: sv4.golike.net";
-$b1 ="Host: sv5.golike.net";
+$b2 ="Host: dev.golike.net";
+$b3 ="Host: sv2.golike.net";
+$b4 ="Host: sv3.golike.net";
+$b5 ="Host: sv4.golike.net";
+$b6 ="Host: sv5.golike.net";
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$tsm = array($a1,$a2,$a3,$a4,$a5);
-$tsm1 = array($b1,$a2,$a3,$a4,$a5);
+$tsm = array($a1,$a6,$a7,$a8,$a9,$a10,$a11,$a2,$a3,$a4,$a5);
+$tsm1 = array($b1,$b2,$b3,$b4,$b5,$b6,$a2,$a3,$a4,$a5);
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*//*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -202,15 +202,7 @@ $ten = $go['data'][$co]['nickname'];/*[Tool Tao Cấm Buôn Bán ]*/
 
 /*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-system('clear');
-///// Tools Nguyễn Văn Phúc /////
-$phucc=$nau."CHỦ TOOL : Nguyễn Văn Phúc && Edit by Bi Dev \n";
-cc($phucc);
-echo $green."Tool Golike TikTok Vip    \n";cc($lop);
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
-/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
+
 
 while(true){
 

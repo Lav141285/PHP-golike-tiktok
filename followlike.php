@@ -245,7 +245,7 @@ system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 
-for ($time = 999999; $time > 0; $time--) {
+for ($time = 999999999; $time > 0; $time--) {
     echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(0);
 }
 

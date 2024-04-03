@@ -225,6 +225,10 @@ $p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn B�
 /*[Tools Nguyễn Văn Phúc ]*/cc($p);
 continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
+
+
+
+
 if ($st == "210") {
     echo "Đang Load Lại Job            \r"; sleep(0); continue;
 } else {

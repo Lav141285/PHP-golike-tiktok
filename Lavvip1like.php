@@ -186,7 +186,10 @@ while (true) {
         $b = 
         $c = $a + $b;
 
-
+$l = $p ;
+$o = 
+$i = $l + $o;
+ 
  
  
     $linknow = explode(' ', explode('com/', $link)[1])[0];

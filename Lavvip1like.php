@@ -209,6 +209,11 @@ continue;}else{}
  
     if($st=="422"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
+if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+
+if($st=="400"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+
+
 ("termux-open-url $link");
 
 for ($time = $delay; $time > -1; $time--) {

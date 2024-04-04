@@ -207,7 +207,7 @@ cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
 continue;}else{}
 
  
-    if($st=="42"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+    if($st=="422"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
 ("termux-open-url $link");
 

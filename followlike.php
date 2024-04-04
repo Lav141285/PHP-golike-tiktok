@@ -214,11 +214,10 @@ continue;}else{}
  
     if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
-system("termux-open-url $link");
-
-for ($time = $delay; $time > -1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
-
+system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+for($time=3;$time>-1;$time--){
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);
  
     $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
  
@@ -252,7 +251,7 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
  
         $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
         for ($time = $delay; $time > -1; $time--) {
-           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(1);
+           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(3);
         }} else {
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  

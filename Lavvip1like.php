@@ -190,12 +190,12 @@ $p = $red."Thành công           \r";
 cc($p);}else{echo $yellow."Tôi không muốn làm Job này   \n";}
 continue;}else{}
 
-if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
 ("termux-open-url $link");
 
 for ($time = $delay; $time > -1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}
 
 $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
 

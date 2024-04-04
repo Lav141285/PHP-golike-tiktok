@@ -244,12 +244,15 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);
  
  
  
-    if ($se == "1") {
+        if ($se == "1") {
  
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ngay = date("H:i"); $noe++;
  
-        $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);}else{    
+        $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
+        for ($time = $delay; $time > -1; $time--) {
+           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(1);
+        }} else {
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  
         $tsm3 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/");
@@ -265,6 +268,5 @@ cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
 
 
 }
-
 
 

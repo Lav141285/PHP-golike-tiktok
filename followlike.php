@@ -217,8 +217,8 @@ continue;}else{}
 
 system("termux-open-url $link");
 
-for ($time = $delay; $time > -1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
+for ($time = 3; $time > 3; $time--) {
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);}
 
  
     $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
@@ -252,8 +252,8 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
         $ngay = date("H:i"); $noe++;
  
         $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
-        for ($time = $delay; $time > -1; $time--) {
-           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(1);
+        for ($time = 0; $time > 3; $time--) {
+           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(3);
         }} else {
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  

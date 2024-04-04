@@ -183,13 +183,7 @@ while (true) {
     $coin = $golike['data']['price_per_after_cost'];
  
         $a = $coin;
-        $b = 
-        $c = $a + $b;
-
-$l = $p ;
-$o = 
-$i = $l + $o;
- 
+        
  
  
     $linknow = explode(' ', explode('com/', $link)[1])[0];

@@ -187,7 +187,7 @@ $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Tôi không muốn làm Job này"){
 $p = $red."Thành công           \r";
-cc($p);}else{echo $yellow."Tôi không muốn làm Job này\n";}
+cc($p);}else{echo $yellow."Tôi không muốn làm Job này   \n";}
 continue;}else{}
 
 if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}

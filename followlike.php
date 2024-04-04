@@ -212,7 +212,7 @@ cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
 continue;}else{}
 
  
-    if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+    if($st=="400"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
 system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/

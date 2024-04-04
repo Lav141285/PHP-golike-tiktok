@@ -112,14 +112,14 @@ function cc($vanban) {
 
 $a1 = "Host: gateway.golike.net";
 $a2 = "user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIyNDY2MjUsImV4cCI6MTc0Mzc4MjYyNSwibmJmIjoxNzEyMjQ2NjI1LCJqdGkiOiJaVUNLekNvaGphb0VBNUcwIiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In08lOY0U0YMnavUq3xhFEpFMv5lcH1qgXmcCOmhUyp19Y    ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3 = "authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIxNjYzNjAsImV4cCI6MTc0MzcwMjM2MCwibmJmIjoxNzEyMTY2MzYwLCJqdGkiOiJVZUF6SWtBZWoyaGxka2c0Iiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.MPNWFU_kYujRdSk29DVoesOn-6f-ft-oSpv_Q50v6hE     ";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$a4 = "origin: https://app.golike.net";
- 
-$a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
- 
- 
- 
+$a4="origin: https://app.golike.net";
+
+$a5 ="t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
+
+
+
  
  
  
@@ -248,22 +248,19 @@ for ($time = 3; $time > -3; $time--) {
  
  
  
-        if ($se == "1") {
- 
-        date_default_timezone_set('Asia/Ho_Chi_Minh');
-        $ngay = date("H:i"); $noe++;
- 
-        $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
-        for ($time = $delay; $time > -1; $time--) {
-           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(1);
-        }} else {
-        $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
- 
-        $tsm3 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/");
-        $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-jobs", $tsm3, $data);
-        $loi = json_decode($loi, true);
-        $mes = $loi['message'];
-        if($mes == "Tôi không muốn làm Job này"){
+        if($se == "1"){/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+$ngay=date("H:i");$noe++;/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);}else{
+$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+$tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
+$loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$loi = json_decode($loi,true);
+$mes = $loi['message'];
+if($mes == "Tôi không muốn làm Job này"){
 $p = $red." Thành công           \r";
 cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
 
@@ -272,5 +269,9 @@ cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
 
 
 }
+
+
+
+
 
 

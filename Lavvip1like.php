@@ -182,7 +182,7 @@ while (true) {
     $ty = $golike['data']['package_name'];
     $coin = $golike['data']['price_per_after_cost'];
  
-        $a = $coin;
+        
         
  
  

@@ -216,9 +216,13 @@ continue;}else{}
 
 system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-for($time=3;$time>-1;$time--){
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);
- 
+
+
+
+
+for ($time = 3; $time > -3; $time--) {
+    echo $yellow."Vui lòng đợi $time để thực hiện...... \r"; sleep(3);
+}
     $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
  
     $tsm2 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/",);

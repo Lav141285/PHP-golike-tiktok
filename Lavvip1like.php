@@ -186,7 +186,7 @@ $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-j
 $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Tôi không muốn làm Job này"){
-$p = $red."Báo Cáo lỗi Thành công           \r";
+$p = $red."Thành công           \r";
 cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé  \n => telegram : @nvp2912\n";}
 continue;}else{}
 
@@ -237,7 +237,7 @@ $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-j
 $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Tôi không muốn làm Job này"){
-$p = $red."Báo Cáo lỗi Thành công           \r";
+$p = $red." Thành công           \r";
 cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé \n => telegram : @nvp2912\n";}
 
 

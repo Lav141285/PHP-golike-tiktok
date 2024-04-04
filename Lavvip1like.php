@@ -1,5 +1,4 @@
 
-
 $red="\033[1;31m";
 
 $green="\033[1;32m";
@@ -186,7 +185,9 @@ $tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type
 $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
 $loi = json_decode($loi,true);
 $mes = $loi['message'];
-if($mes == "Bỏ qua thành công !"){
+if($mes == "Bỏ qua thành công !"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+
+
 $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé  \n => telegram : @nvp2912\n";}
 continue;}else{}
@@ -237,7 +238,8 @@ $tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type
 $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
 $loi = json_decode($loi,true);
 $mes = $loi['message'];
-if($mes == "Bỏ qua thành công !"){
+if($mes == "Bỏ qua thành công !"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+
 $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé \n => telegram : @nvp2912\n";}
 

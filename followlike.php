@@ -216,8 +216,8 @@ continue;}else{}
 
 system("termux-open-url $link");
 
-for ($time = 3; $time > -1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);}
+for ($time = $delay; $time > -1; $time--) {
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
 
  
     $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';

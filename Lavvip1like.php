@@ -1,5 +1,4 @@
 
-
 $red="\033[1;31m";
 
 $green="\033[1;32m";
@@ -178,7 +177,7 @@ $now = "https://now.tiktok.com/$linknow";
 $loi_id = $golike['data']['object_id'];
 
 if($ty =="comment" or $ty == "follow"){
-echo "Job $ty  follow         \r";
+echo "Job $ty           \r";
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 
 $tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");

@@ -198,7 +198,7 @@ $i = $l + $o;
  
     $loi_id = $golike['data']['object_id'];
  
-    if ($ty == "comment" or $ty == "follow") {
+    if ($ty == "comment" or $ty == "") {
         echo "Job $ty         \r";
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  
@@ -223,7 +223,7 @@ continue;}else{}
 
 
 
-system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
+("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
 

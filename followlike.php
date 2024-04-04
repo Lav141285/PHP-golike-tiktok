@@ -1,3 +1,4 @@
+
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -79,7 +80,6 @@ function POST($host, $tsm, $data) {
  
         CURLOPT_PORT => "443",
         CURLOPT_URL => "$host",
-        CURLOPT_RETURNTRANSFER => true,
  
  
         CURLOPT_SSL_VERIFYPEER => false,
@@ -249,10 +249,7 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ngay = date("H:i"); $noe++;
  
-        $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
-        for ($time = $delay; $time > -1; $time--) {
-           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(3);
-        }} else {
+        $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." ꈤᐯᖘ •".$yellow." ".$red."=> ".$trang."[ +$coin ]  \n";cc($uu);}else{
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  
         $tsm3 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/");

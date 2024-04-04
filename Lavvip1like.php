@@ -1,3 +1,4 @@
+
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");

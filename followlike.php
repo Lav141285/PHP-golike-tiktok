@@ -1,4 +1,3 @@
-
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -113,8 +112,8 @@ function cc($vanban) {
 
 $a1 = "Host: gateway.golike.net";
 $a2 = "user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
+Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIyNDY2MjUsImV4cCI6MTc0Mzc4MjYyNSwibmJmIjoxNzEyMjQ2NjI1LCJqdGkiOiJaVUNLekNvaGphb0VBNUcwIiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8lOY0U0YMnavUq3xhFEpFMv5lcH1qgXmcCOmhUyp19Y    ";
  
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIyNDY2MjUsImV4cCI6MTc0Mzc4MjYyNSwibmJmIjoxNzEyMjQ2NjI1LCJqdGkiOiJaVUNLekNvaGphb0VBNUcwIiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8lOY0U0YMnavUq3xhFEpFMv5lcH1qgXmcCOmhUyp19Y
 $a4 = "origin: https://app.golike.net";
  
 $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
@@ -217,7 +216,7 @@ continue;}else{}
 
 system("termux-open-url $link");
 
-for ($time = 3; $time > 3; $time--) {
+for ($time = 3; $time > -1; $time--) {
 echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);}
 
  
@@ -252,8 +251,8 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(3);}
         $ngay = date("H:i"); $noe++;
  
         $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
-        for ($time = 0; $time > 3; $time--) {
-           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(3);
+        for ($time = $delay; $time > -1; $time--) {
+           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(1);
         }} else {
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  

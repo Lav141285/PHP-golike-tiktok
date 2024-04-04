@@ -1,4 +1,3 @@
-
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -187,10 +186,7 @@ while (true) {
         $b = 
         $c = $a + $b;
 
-$l = $p = 1;
-$o = 
-$i = $l + $o;
- 
+
  
  
     $linknow = explode(' ', explode('com/', $link)[1])[0];

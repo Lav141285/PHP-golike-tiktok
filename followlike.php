@@ -1,4 +1,3 @@
-
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -114,7 +113,7 @@ function cc($vanban) {
 $a1 = "Host: gateway.golike.net";
 $a2 = "user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
  
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIyNDY2MjUsImV4cCI6MTc0Mzc4MjYyNSwibmJmIjoxNzEyMjQ2NjI1LCJqdGkiOiJaVUNLekNvaGphb0VBNUcwIiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8lOY0U0YMnavUq3xhFEpFMv5lcH1qgXmcCOmhUyp19Y     ";
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTA4MDUxNDIsImV4cCI6MTc0MjM0MTE0MiwibmJmIjoxNzEwODA1MTQyLCJqdGkiOiJ5MFE1VWJEOFJuQ21mMDBPIiwic3ViIjoyNTA0OTgzLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8yHykwGIKTnX5y1ui2AOG_umwW8VpktFhduQsSzLbf4      ";
  
 $a4 = "origin: https://app.golike.net";
  
@@ -183,15 +182,7 @@ while (true) {
     $ty = $golike['data']['package_name'];
     $coin = $golike['data']['price_per_after_cost'];
  
-        $a = $coin;
-        $b = 
-        $c = $a + $b;
 
-$l = $p = 1;
-$o = 
-$i = $l + $o;
- 
- 
  
     $linknow = explode(' ', explode('com/', $link)[1])[0];
     $now = "https://now.tiktok.com/$linknow";
@@ -224,7 +215,7 @@ continue;}else{}
 
 
 
-("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
+system("termux-open $link");/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 
 

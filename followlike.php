@@ -1,5 +1,4 @@
 
-
 $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
@@ -130,7 +129,7 @@ return 1;}
 $a1="Host:sv4.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIxNjYzNjAsImV4cCI6MTc0MzcwMjM2MCwibmJmIjoxNzEyMTY2MzYwLCJqdGkiOiJVZUF6SWtBZWoyaGxka2c0Iiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.MPNWFU_kYujRdSk29DVoesOn-6f-ft-oSpv_Q50v6hE     ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTIyNDY2MjUsImV4cCI6MTc0Mzc4MjYyNSwibmJmIjoxNzEyMjQ2NjI1LCJqdGkiOiJaVUNLekNvaGphb0VBNUcwIiwic3ViIjoyNjI1OTM2LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8lOY0U0YMnavUq3xhFEpFMv5lcH1qgXmcCOmhUyp19Y     ";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a4="origin: https://app.golike.net";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
@@ -230,7 +229,6 @@ continue;}else{}/*[Tool Tao Cấm Buôn Bán ]*/
 
 
 
-
 if ($st == "429") {
     echo "Đang Load Lại Job            \r"; sleep(3); continue;
 } else {
@@ -293,14 +291,12 @@ $uu=$nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$ui
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = json_decode($loi,true);
-$mes = $loi['message'];
-if($mes == "Tôi không muốn làm Job này"){
-$p = $red." Thành công           \r";
-cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
-
-
+$loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$p = $red."Báo Cáo lỗi Thành công           \r";/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
+cc($p);
+/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 }
 
 

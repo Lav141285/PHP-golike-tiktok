@@ -190,7 +190,7 @@ $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);}else{echo $yellow."Đã Xảy Ra Lỗi Báo Ad Nguyễn Văn Phúc nhé  \n => telegram : @nvp2912\n";}
 continue;}else{}
 
-if($st=="400"){echo "Đang Load Lại Job            \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(1);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
 ("termux-open-url $link");
 

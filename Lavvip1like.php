@@ -213,8 +213,8 @@ if($st>="400"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng th
 
 ("termux-open-url $link");
 
-for ($time = $delay; $time > -1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
+for ($time =  1; $time > 1; $time--) {
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0.25);}
 
  
     $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';

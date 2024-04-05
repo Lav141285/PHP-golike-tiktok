@@ -183,7 +183,7 @@ while (true) {
     $coin = $golike['data']['price_per_after_cost'];
  
                 $a = $coin;
-        $b = 
+        $b = 0
         $c = $a + $b;
 
 $l = $p = 1;

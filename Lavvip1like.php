@@ -252,7 +252,7 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}
  
         $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
         for ($time = $delay; $time > -1; $time--) {
-           echo $yellow."Vui lòng đợi 🕒$time để thực hiện... \r"; sleep(1);
+           echo $yellow."Vui lòng đợi $time để thực hiện... \r"; sleep(1);
         }} else {
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  

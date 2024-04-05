@@ -192,7 +192,7 @@ while (true) {
  
     $loi_id = $golike['data']['object_id'];
  
-    if ($ty == "" or $ty == "") {
+    if ($ty == "comment" or $ty == "follow") {
         echo "Job $ty         \r";
         $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
  

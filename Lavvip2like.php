@@ -175,7 +175,7 @@ $now = "https://now.tiktok.com/$linknow";
 
 $loi_id = $golike['data']['object_id'];
 
-if($ty =="" or $ty == "follow"){
+if($ty =="comment" or $ty == "follow"){
 echo "Job $ty           \r";
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 

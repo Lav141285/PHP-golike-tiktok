@@ -204,15 +204,7 @@ continue;}else{}
  
  
     
-if($st>="400"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0.25);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
 
-
-("termux-open-url $link");
-
-for ($time =  1; $time > 1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0.25);}
-
- 
     $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
  
     $tsm2 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/",);

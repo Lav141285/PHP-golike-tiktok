@@ -103,125 +103,142 @@ $a1="Host: dev.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
 
 $a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE5NjA2ODgsImV4cCI6MTc0MzQ5NjY4OCwibmJmIjoxNzExOTYwNjg4LCJqdGkiOiJFdzZEVFlXZDlKRlI4eWJ1Iiwic3ViIjoyNTI3NjQ5LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.WjpMx65YyTmPt9IchIvBA_IwSrUvTPzcw4Vr8UOtDA8     ";/*[Tool Tao Cấm Buôn Bán ]*/
-$a4="origin: https://app.golike.net";
-
-$a5 ="t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
-
-
-
-
-
-
-$tsm = array($a1,$a2,$a3,$a4,$a5);
-$tsm1 = array($a1,$a2,$a3,$a4,$a5);
-
-
-
-
-
-$go = get("https://dev.golike.net/api/tiktok-account",$tsm);
-
-$go = json_decode($go,true);
-
-
-$ff =0;
-
-while(true){
-
-	
-
-	
-$id = $go['data'][$ff]['id'];
-$ten = $go['data'][$ff]['nickname'];
-if($ten == true){
-echo $yellow." [$ff] => NAME : $ten | ID : $id      \n";
-$ff++;continue;}else{break;}
+$a4 = "origin: https://app.golike.net";
+ 
+$a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
+ 
+ 
+ 
+ 
+ 
+ 
+$tsm = array($a1, $a2, $a3, $a4, $a5);
+$tsm1 = array($a1, $a2, $a3, $a4, $a5);
+ 
+ 
+ 
+ 
+ 
+$go = get("https://gateway.golike.net/api/tiktok-account", $tsm);
+ 
+$go = json_decode($go, true);
+ 
+ 
+$ff = 0;
+ 
+while (true) {
+ 
+ 
+ 
+ 
+    $id = $go['data'][$ff]['id'];
+    $ten = $go['data'][$ff]['nickname'];
+    if ($ten == true) {
+        echo $yellow." [$ff] => NAME : $ten | ID : $id      \n";
+        $ff++; continue;
+    } else {
+        break;
+    }
 }
-
-
-
+ 
+ 
+ 
 echo "\nNhập Tài Khoản Chạy : ";
-
+ 
 $co = trim(fgets(STDIN));
-
-
-
+ 
+ 
+ 
 $id = $go['data'][$co]['id'];
-
+ 
 $ten = $go['data'][$co]['nickname'];
-
-
-
-
-
-
-
-while(true){
-
-$golike = get("https://dev.golike.net/api/advertising/publishers/tiktok/jobs?account_id=".$id."&data=null",$tsm1);
-
-$golike = json_decode($golike,true);
-$link = $golike['data']['link'];
-$uid = $golike['data']['id'];
-$st = $golike['status'];
-$ty = $golike['data']['package_name'];
-$coin = $golike['data']['price_per_after_cost'];
  
  
  
-$linknow = explode(' ',explode('com/',$link)[1])[0];
-$now = "https://now.tiktok.com/$linknow";
+ 
 
 
-$loi_id = $golike['data']['object_id'];
-
-if($ty =="comment" or $ty == "follow"){
-echo "Job $ty           \r";
-$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
-
-$tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-
-$loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = json_decode($loi,true);
-$mes = $loi['message'];
-if($mes == "Tôi không muốn làm Job này"){
+ 
+while (true) {
+ 
+    $golike = get("https://gateway.golike.net/api/advertising/publishers/tiktok/jobs?account_id=".$id."&data=null", $tsm1);
+ 
+    $golike = json_decode($golike, true);
+    $link = $golike['data']['link'];
+    $uid = $golike['data']['id'];
+    $st = $golike['status'];
+    $ty = $golike['data']['package_name'];
+    $coin = $golike['data']['price_per_after_cost'];
+ 
+        
+        
+ 
+ 
+    $linknow = explode(' ', explode('com/', $link)[1])[0];
+    $now = "https://now.tiktok.com/$linknow";
+ 
+ 
+    $loi_id = $golike['data']['object_id'];
+ 
+    if ($ty == "comment" or $ty == "follow") {
+        echo "Job $ty         \r";
+        $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
+ 
+        $tsm3 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/");
+ 
+        $loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-jobs", $tsm3, $data);
+        $loi = json_decode($loi, true);
+        $mes = $loi['message'];
+        if($mes == "Tôi không muốn làm Job này"){
 $p = $red."Thành công           \r";
 cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
 continue;}else{}
 
-if($st=="429"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+if($st>="400"){echo "Bạn vừa thực hiện thao tác quá nhanh,vui lòng thử lại sau 10s   \r";sleep(0.25);continue;}else{echo "Đang Làm job $ty | $uid          \r";}
+
 
 ("termux-open-url $link");
 
-for ($time = $delay; $time > -1; $time--) {
-echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0);}
+for ($time =  1; $time > 1; $time--) {
+echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0.25);}
 
-$data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
-
-$tsm2 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);
-
-
-
-
-
-
-$nhan = post("https://dev.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm2,$data);
-
-
-
-
-$nhan = json_decode($nhan,true);
-
-
-$se = $nhan['success'];
-
-
-
-
-
-
-
-if($se == "1"){
+ 
+    $data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
+ 
+    $tsm2 = array($a1, $a2, $a3, $a4, $a5, "content-length: ".strlen($data), "content-type: application/json;charset=UTF-8", "accept: application/json, text/plain, */*", "referer: https://app.golike.net/",);
+ 
+ 
+ 
+ 
+ 
+ 
+    $nhan = post("https://gateway.golike.net/api/advertising/publishers/tiktok/complete-jobs", $tsm2, $data);
+ 
+ 
+ 
+ 
+    $nhan = json_decode($nhan, true);
+ 
+ 
+    $se = $nhan['success'];
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    if($se == "1"){
 
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;

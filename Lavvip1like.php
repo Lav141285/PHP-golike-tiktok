@@ -182,7 +182,13 @@ while (true) {
     $ty = $golike['data']['package_name'];
     $coin = $golike['data']['price_per_after_cost'];
  
-        
+                $a = $coin;
+        $b = 
+        $c = $a + $b;
+
+$l = $b = 1;
+$o = 
+$i = $l + $o;
         
  
  
@@ -247,7 +253,7 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(0.25);}
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ngay = date("H:i"); $noe++;
  
-        $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]".$red."ID:$ty \n";cc($uu);
+                $uu = $nau."$noe •".$cam." [$ngay] •".$trang." [$yellow$ty ".$trang."- $nau$uid".$trang."] •".$green." Zoi •".$yellow." ".$red."=> ".$trang."[ +$coin ]》[$c]->".$red."[$i]ID:$ty \n";cc($uu);
         for ($time = $delay; $time > -1; $time--) {
            echo $yellow."Vui lòng đợi $time để thực hiện... \r"; sleep(1);
         }} else {

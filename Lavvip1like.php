@@ -254,8 +254,6 @@ $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type
 
 $tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
 $loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-$loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
-
 $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Tôi không muốn làm Job này"){

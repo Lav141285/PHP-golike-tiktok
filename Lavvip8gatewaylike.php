@@ -102,6 +102,8 @@ return 1;}
 $a1="Host: dev.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
 
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE5NTU3NjIsImV4cCI6MTc0MzQ5MTc2MiwibmJmIjoxNzExOTU1NzYyLCJqdGkiOiJXb1lDb2s5NWt1WDlZNW8xIiwic3ViIjoyMTYzMjUxLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.wrMr1Kq0MgAOsYMhNqnTO9NxTu_MSd3TdSVt5Aa4ZBg         ";/*[Tool Tao Cấm Buôn Bán ]*/
+/*[Tools Nguyễn Văn Phúc ]*/
 $a4 = "origin: https://app.golike.net";
  
 $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";

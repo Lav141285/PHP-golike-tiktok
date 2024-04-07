@@ -102,7 +102,7 @@ function POST($host, $tsm, $data) {
 function cc($vanban) {
     $str = strlen($vanban);
     for ($i = 0; $i <= $str; $i++) {
-        echo $vanban[$i]; usleep(1);
+        echo $vanban[$i]; usleep(1000);
     }
     return 1;
 }
@@ -211,52 +211,7 @@ continue;}else{}
  
  
  if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
-} else {
-    echo "Đang Làm job $ty | $uid          \r";
-}
-if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(1); continue;
+    echo "Đang Load Lại Job            \r"; sleep(20); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }

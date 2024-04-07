@@ -236,27 +236,27 @@ if ($st >= "400") {
     echo "Đang Làm job $ty | $uid          \r";
 }
 if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+    echo "Đang Load Lại Job            \r"; sleep(1); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }
 if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+    echo "Đang Load Lại Job            \r"; sleep(1); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }
 if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+    echo "Đang Load Lại Job            \r"; sleep(1); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }
 if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+    echo "Đang Load Lại Job            \r"; sleep(1); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }
 if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+    echo "Đang Load Lại Job            \r"; sleep(1); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }

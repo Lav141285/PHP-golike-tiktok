@@ -103,7 +103,7 @@ return 1;}
 $a1="Host: dev.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
 
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTI0MjkwMjUsImV4cCI6MTc0Mzk2NTAyNSwibmJmIjoxNzEyNDI5MDI1LCJqdGkiOiI5c0Z0dDZSV2hpTVNWS1BUIiwic3ViIjoyNTA2MjE4LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.8oPNin3pHBdkM8qx35pHEvS_T7aZWz8M-DEFTv5oegI        ";/*[Tool Tao Cấm Buôn Bán ]*/
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTI0NTcwNzksImV4cCI6MTc0Mzk5MzA3OSwibmJmIjoxNzEyNDU3MDc5LCJqdGkiOiJ1TWJ1cjR6blA5azkyOXo4Iiwic3ViIjoyNjEzMzI1LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.uUVfX-XCYooXdAS7O1RJranc89ELgK3hW5cYXuVdcdQ      ";/*[Tool Tao Cấm Buôn Bán ]*/
 /*[Tools Nguyễn Văn Phúc ]*/
 $a4 = "origin: https://app.golike.net";
  

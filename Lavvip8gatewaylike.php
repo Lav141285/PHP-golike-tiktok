@@ -102,8 +102,6 @@ return 1;}
 $a1="Host: dev.golike.net";
 $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36";
 
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE5NTU0MjksImV4cCI6MTc0MzQ5MTQyOSwibmJmIjoxNzExOTU1NDI5LCJqdGkiOiJxUGZjenU5bVFJdDlRNVlKIiwic3ViIjoyNjEzMzI1LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.eIHmLZZz9mhGQWAoC0RIjFYjdANoq8f4gA2Ks0DSRAs    ";/*[Tool Tao Cấm Buôn Bán ]*/
-/*[Tools Nguyễn Văn Phúc ]*/
 $a4 = "origin: https://app.golike.net";
  
 $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
@@ -192,13 +190,20 @@ while (true) {
         $mes = $loi['message'];
         if($mes == "Tôi không muốn làm Job này"){
 $p = $red."Thành công           \r";
-cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
+cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \r";}
 continue;}else{}
 
  
  
  
- 
+ if ($st >= "400") {
+    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+} else {
+    echo "Đang Làm job $ty | $uid          \r";
+}
+
+
+
  
  
  
@@ -242,12 +247,13 @@ echo $yellow."Vui lòng đợi $time để thực hiện...... \r";sleep(1);}}el
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
 
 $tsm3 = array($a1,$a2,$a3,$a4,$a5,"content-length: ".strlen($data),"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://dev.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$loi = post("https://gateway.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+
 $loi = json_decode($loi,true);
 $mes = $loi['message'];
 if($mes == "Tôi không muốn làm Job này"){
 $p = $red." Thành công           \r";
-cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
+cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \r";}
 
 
 }

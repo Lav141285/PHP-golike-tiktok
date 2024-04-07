@@ -204,7 +204,7 @@ while (true) {
         $mes = $loi['message'];
         if($mes == "Tôi không muốn làm Job này"){
 $p = $red."Thành công           \r";
-cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \n";}
+cc($p);}else{echo $yellow."Tôi không muốn làm Job này            \r";}
 continue;}else{}
 
  

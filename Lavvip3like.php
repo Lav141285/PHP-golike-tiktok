@@ -105,6 +105,7 @@ $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;
 $a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTE5NjA2ODgsImV4cCI6MTc0MzQ5NjY4OCwibmJmIjoxNzExOTYwNjg4LCJqdGkiOiJFdzZEVFlXZDlKRlI4eWJ1Iiwic3ViIjoyNTI3NjQ5LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.WjpMx65YyTmPt9IchIvBA_IwSrUvTPzcw4Vr8UOtDA8     ";/*[Tool Tao Cấm Buôn Bán ]*/
 $a4 = "origin: https://app.golike.net";
  
+ 
 $a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
  
  
@@ -198,7 +199,7 @@ continue;}else{}
  
  
  if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(10); continue;
+    echo "Đang Load Lại Job            \r"; sleep(0); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }

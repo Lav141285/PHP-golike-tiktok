@@ -105,7 +105,7 @@ $a2="user-agent: Mozilla/5.0 (Linux; Android 12; SM-A025F Build/SP1A.210812.016;
 $a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTI2OTA3NTIsImV4cCI6MTc0NDIyNjc1MiwibmJmIjoxNzEyNjkwNzUyLCJqdGkiOiJ6QWo0S0x2YTZMN2kxaGdWIiwic3ViIjoyNjAxNDgwLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.p11iUDnkYwaeVTWOxPpCznctY3nY3LQkx6J-1Xr2nNk";/*[Tool Tao Cấm Buôn Bán ]*/
 $a4 = "origin: https://app.golike.net";
  
-$a5 = "t: VFZSWk5FOVVXVFJPVkdzd1RsRTlQUT09";
+$a5 = "t: VFZSamVFMXFXVFZOUkdNeFRWRTlQUT09";
  
  
  

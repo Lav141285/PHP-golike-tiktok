@@ -197,7 +197,7 @@ continue;}else{}
  
  
  
- if ($st >= "400") {
+ if ($st >= "422") {
     echo "Đang Load Lại Job            \r"; sleep(0); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";

@@ -114,7 +114,7 @@ function cc($vanban) {
 $a1 = "Host: gateway.golike.net";
 $a2 = "user-agent: User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36";
  
-$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTI3MDQ3MTYsImV4cCI6MTc0NDI0MDcxNiwibmJmIjoxNzEyNzA0NzE2LCJqdGkiOiJrc1g4b1hQb1RZc1RoRVYyIiwic3ViIjoyNjEwMjM1LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.tbBQbQU5QWYJ3m-NSo_MpLSH1AIXPnw2Jp82cLOD4nM  ";
+$a3="authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRld2F5LmdvbGlrZS5uZXRcL2FwaVwvbG9naW4iLCJpYXQiOjE3MTI3MDQ3MTYsImV4cCI6MTc0NDI0MDcxNiwibmJmIjoxNzEyNzA0NzE2LCJqdGkiOiJrc1g4b1hQb1RZc1RoRVYyIiwic3ViIjoyNjEwMjM1LCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4In0.tbBQbQU5QWYJ3m-NSo_MpLSH1AIXPnw2Jp82cLOD4nM ";
  
 
 $a4 = "origin: https://app.golike.net";

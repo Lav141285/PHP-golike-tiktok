@@ -3,7 +3,6 @@ $ngay = date("d");
 $thang = date("m");
 $nam = date("Y");
  
-
  
 $red = "\033[1;31m";
  
@@ -211,8 +210,8 @@ continue;}else{}
  
  
  
- if ($st >= "400") {
-    echo "Đang Load Lại Job            \r"; sleep(0); continue;
+ if ($st >= "422") {
+    echo "Đang Load Lại Job            \r"; sleep(0.25); continue;
 } else {
     echo "Đang Làm job $ty | $uid          \r";
 }

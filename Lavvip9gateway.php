@@ -488,7 +488,7 @@ D41Rq:
 goto RCvzq;
 
 OhYT1:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mLavvip9       \033[1;33m   ║
 ";
 
 goto zwUuE;
@@ -2169,7 +2169,7 @@ $z7A5m = $UbdSJ["data"][$cXC5S]["nickname"];
 goto VF2v3;
 
 uTEP0:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mLavvip9       \033[1;33m   ║
 ";
 
 goto XAFGa;
@@ -2740,7 +2740,7 @@ $M__T2 = $UbdSJ["data"][$sSDU3]["id"];
 goto Qqklr;
 
 UzeWS:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mLavvip9       \033[1;33m   ║
 ";
 
 goto kTfih;
@@ -3507,7 +3507,7 @@ goto TaJrI;
 goto bmz_L;
 
 VdZNS:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mLavvip9       \033[1;33m   ║
 ";
 
 goto ruIjU;

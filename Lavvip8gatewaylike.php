@@ -940,7 +940,7 @@ echo "\033[1;33m" . $sF9If . "\033[0m Nhập [" . $cXC5S . "] để chọn: \033
 goto o1GUx;
 
 sQO7L:
-$un8t0 = "data.txt";
+$un8t0 = "Lavvip8.txt";
 
 goto DTO1X;
 

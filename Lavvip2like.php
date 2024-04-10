@@ -488,7 +488,7 @@ D41Rq:
 goto RCvzq;
 
 OhYT1:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37m Thành Đạt       \033[1;33m   ║
 ";
 
 goto zwUuE;

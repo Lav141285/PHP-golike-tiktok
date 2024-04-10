@@ -1418,12 +1418,14 @@ N_RL3:
 goto A8O7v;
 
 epLRA:
-
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
+";
 
 goto cLtZx;
 
 XAFGa:
-
+echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://bom.so/fyxbQO\033[1;33m  ║
+";
 
 goto xOKVs;
 
@@ -1490,6 +1492,8 @@ echo "Trạng thái check: " . $bmpW2 . "
 goto r42ts;
 
 ru_mZ:
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
+";
 
 goto qcM8L;
 

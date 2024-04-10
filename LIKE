@@ -116,6 +116,7 @@ echo "ĐANG KẾT NỐI\n";
 eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/Lavvip7like.php'));
 
 } 
+
 if ($chon == '8') {
 echo "ĐANG KẾT NỐI\n";
 eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/Lavvip8gatewaylike.php'));

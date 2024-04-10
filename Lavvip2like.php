@@ -2698,7 +2698,7 @@ kRAMO:
 goto Uz6rZ;
 
 ft7dn:
-echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: V14.0          \033[1;33m      ║ 
+echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: Lavvip2          \033[1;33m      ║ 
 ";
 
 goto BcCF0;
@@ -3642,7 +3642,7 @@ $wa0St = "trim"("file_get_contents"($WX3yx));
 goto kMz1A;
 
 Xy3J3:
-echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: V14.0          \033[1;33m      ║ 
+echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: Lavvip2          \033[1;33m      ║ 
 ";
 
 goto YatKY;
@@ -3694,7 +3694,7 @@ echo "\033[1;33m" . $sF9If . "\033[0m Nhập [" . $cXC5S . "] để chọn: \033
 goto Nl1wG;
 
 kU2ae:
-echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: V14.0          \033[1;33m      ║ 
+echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: Lavvip2          \033[1;33m      ║ 
 ";
 
 goto P8r9G;
@@ -3802,7 +3802,7 @@ $bmpW2 = "\033[32mON";
 goto KM0YO;
 
 poUZ2:
-echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: V14.0          \033[1;33m      ║ 
+echo "\033[1;33m║                   \033[1;33m║\033[1;31mPhiên bản \033[1;37m: Lavvip2          \033[1;33m      ║ 
 ";
 
 goto X0apD;

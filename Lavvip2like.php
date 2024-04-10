@@ -1418,14 +1418,12 @@ N_RL3:
 goto A8O7v;
 
 epLRA:
-echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
-";
+
 
 goto cLtZx;
 
 XAFGa:
-echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://bom.so/fyxbQO\033[1;33m  ║
-";
+
 
 goto xOKVs;
 

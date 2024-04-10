@@ -434,7 +434,7 @@ echo "" . $ejLVp . " Nhập y để bật tiktok now : ";
 goto UFx65;
 
 afNSl:
-echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0343317280        \033[1;33m   ║
+echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0971497053           \033[1;33m   ║
 ";
 
 goto ft7dn;
@@ -488,7 +488,7 @@ D41Rq:
 goto RCvzq;
 
 OhYT1:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37m Lê Anh Vũ  \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
 ";
 
 goto zwUuE;
@@ -876,7 +876,7 @@ goto i0rv9;
 goto rB0Ne;
 
 qcM8L:
-echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0343317280        \033[1;33m   ║
+echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0971497053           \033[1;33m   ║
 ";
 
 goto Xy3J3;
@@ -910,7 +910,7 @@ g1lw_:
 goto rvKz0;
 
 Jt0lb:
-echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0343317280        \033[1;33m   ║
+echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0971497053           \033[1;33m   ║
 ";
 
 goto kU2ae;
@@ -1050,7 +1050,7 @@ if ($t1VJC == "y" || $t1VJC == "Y") {
 goto IIkmT;
 
 xOKVs:
-echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://sLavvip2\033[1;33m    ║
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
 ";
 
 goto afNSl;
@@ -1418,14 +1418,13 @@ N_RL3:
 goto A8O7v;
 
 epLRA:
-echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37m
-https://sLavvip2\033[1;33m    ║
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
 ";
 
 goto cLtZx;
 
 XAFGa:
-echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://Lavvip2\033[1;33m  ║
+echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://bom.so/fyxbQO\033[1;33m  ║
 ";
 
 goto xOKVs;
@@ -1493,7 +1492,7 @@ echo "Trạng thái check: " . $bmpW2 . "
 goto r42ts;
 
 ru_mZ:
-echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://sLavvip2\033[1;33m    ║
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
 ";
 
 goto qcM8L;
@@ -2170,7 +2169,7 @@ $z7A5m = $UbdSJ["data"][$cXC5S]["nickname"];
 goto VF2v3;
 
 uTEP0:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Lê Anh Vũ  \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
 ";
 
 goto XAFGa;
@@ -2741,7 +2740,7 @@ $M__T2 = $UbdSJ["data"][$sSDU3]["id"];
 goto Qqklr;
 
 UzeWS:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Lê Anh Vũ  \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
 ";
 
 goto kTfih;
@@ -2782,7 +2781,7 @@ goto xnTGu;
 goto mkRpP;
 
 zwUuE:
-echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://Lavvip2\033[1;33m  ║
+echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://bom.so/fyxbQO\033[1;33m  ║
 ";
 
 goto epLRA;
@@ -2797,7 +2796,7 @@ bBdDb:
 goto hmndU;
 
 Mkg1P:
-echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://sLavvip2\033[1;33m    ║
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
 ";
 
 goto Jt0lb;
@@ -2901,7 +2900,7 @@ $UbdSJ = "json_decode"($N9NEi, true);
 goto Tuzy0;
 
 ruIjU:
-echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://Lavvip2\033[1;33m  ║
+echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://bom.so/fyxbQO\033[1;33m  ║
 ";
 
 goto ru_mZ;
@@ -3508,7 +3507,7 @@ goto TaJrI;
 goto bmz_L;
 
 VdZNS:
-echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Lê Anh Vũ  \033[1;33m   ║
+echo "\033[1;33m║                   \033[1;33m║" . $ZuJLn . "Bản Quyền: \033[1;37mĐỗ Thành Đạt       \033[1;33m   ║
 ";
 
 goto ruIjU;
@@ -3923,7 +3922,7 @@ H6EZ_:
 goto IPnPT;
 
 cLtZx:
-echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0343317280        \033[1;33m   ║
+echo "\033[1;33m║  \033[1;33m  ╚╝╚╝╚╝╚╝╚╝╚╝   \033[1;33m║\033[1;31mMB Bank: \033[1;37m0971497053           \033[1;33m   ║
 ";
 
 goto poUZ2;
@@ -4249,7 +4248,7 @@ echo "" . $UcF_a . " Mẹo:" . $ARNWh . " Ấn enter để bỏ qua các chức 
 goto ixYQR;
 
 kTfih:
-echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://Lavvip2\033[1;33m  ║
+echo "\033[1;33m║  \033[1;32m  ╔╗╔╗╔╗╔╗╔╗╔╗   \033[1;33m║\033[1;32mNhóm Zalo:\033[1;37mhttps://bom.so/fyxbQO\033[1;33m  ║
 ";
 
 goto Mkg1P;

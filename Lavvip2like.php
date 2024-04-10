@@ -1418,7 +1418,8 @@ N_RL3:
 goto A8O7v;
 
 epLRA:
-echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37mhttps://s.net.vn/UjQt\033[1;33m    ║
+echo "\033[1;33m║  \033[1;32m  ║║║║║║║║║║║║   \033[1;33m║\033[1;32mYoutube:\033[1;37m
+https://s.net.vn/UjQt\033[1;33m    ║
 ";
 
 goto cLtZx;

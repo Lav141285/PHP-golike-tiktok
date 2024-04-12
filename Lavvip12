@@ -1563,7 +1563,7 @@ if (!($t1VJC != "y" || $t1VJC != "Y")) {
 goto ehZQC;
 
 AJtXm:
-if (!($qVP6I >= $P54Bk)) {
+if (!($qVP6I == $P54Bk)) {
     goto ucBKS;
 
 }
@@ -1594,7 +1594,7 @@ sleep(1);
 goto YpbvZ;
 
 t25ah:
-$U20sr = $W_yHp >= $AyYVm ? "Now" : "Thường";
+$U20sr = $W_yHp == $AyYVm ? "Now" : "Thường";
 
 goto aQTGQ;
 
@@ -1866,7 +1866,7 @@ $Oh6iZ = "\033[1;96m";
 goto igYFp;
 
 aQTGQ:
-$d3wGA = $W_yHp >= $AyYVm ? "str_replace"("", "", $BVrAo) : $BVrAo;
+$d3wGA = $W_yHp == $AyYVm ? "str_replace"("", "", $BVrAo) : $BVrAo;
 
 goto Ho53T;
 

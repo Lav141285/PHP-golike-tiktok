@@ -4,7 +4,6 @@ $thang = date("m");
 $nam = date("Y");
 
 
-
 $red = "\033[1;31m";
 
 $green = "\033[1;32m";
@@ -54,8 +53,9 @@ echo "💠]>$blud Nhập $res [17] $cam $red   $cam 》$nau -$yellow Lavvip13\n"
 echo "💠]>$blud Nhập $res [18] $cam $red   $cam 》$nau -$yellow Lavvip14\n";
 echo "💠]>$blud Nhập $res [19] $cam $red   $cam 》$nau -$yellow Lavvip15\n";
 echo "💠]>$blud Nhập $res [20] $cam $red   $cam 》$nau -$yellow Lavvip16\n";
+echo "💠]>$blud Nhập $res [21] $cam $red   $cam 》$nau -$yellow Lavvip17\n";
+echo "💠]>$blud Nhập $res [22] $cam $red   $cam 》$nau -$yellow Lavvip18\n";
 
-echo "💠]>$blud Nhập $res [2] $cam $red   $cam 》$nau -$yellow Lavvip16\n";
 
 
 
@@ -189,6 +189,14 @@ echo "ĐANG KẾT NỐI\n";
 eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/lavvip16'));
 
 } 
+
+if ($chon == '21') {
+echo "ĐANG KẾT NỐI\n";
+eval(file_get_contents('https://raw.githubusercontent.com/Lav141285/PHP-golike-tiktok/main/Lavvip17%20'));
+
+} 
+
+
 
 
 

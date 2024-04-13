@@ -2807,7 +2807,7 @@ echo "\033[1;37m━━━━━━━━━━━━━━━━━━━━━�
 goto NIJf4;
 
 N7LdV:
-$s2PiE = "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36";
+$s2PiE = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36";
 
 goto OEox8;
 
@@ -3448,7 +3448,7 @@ $drqXp = "trim"("fgets"(STDIN));
 goto DLpLE;
 
 h0mLA:
-$s2PiE = "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36";
+$s2PiE = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36";
 
 goto LJxdL;
 
